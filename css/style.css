@@ -1,0 +1,265 @@
+@media (min-width: 576px) {
+    .main {
+        padding-left: 0 !important;
+        padding-right: 0 !important;
+    }
+    .reply {
+        width: 94% !important;
+    }
+    .w-sm-50 {
+        width: 50% !important;
+    }
+}
+
+@media (max-width: 764px) {
+    #post-box {
+        width: auto !important;
+    }
+    .form-box,
+    form h3 {
+        width: 70% !important;
+    }
+}
+
+@media (max-width: 575.98px) {
+    .main {
+        width: 100% !important;
+    }
+    header .user-icon {
+        left: 10px;
+        right: auto;
+    }
+    .message {
+        width: 100% !important;
+        margin-left: 0 !important;
+    }
+    .post-time {
+        display: none;
+    }
+    .form-box,
+    form h3 {
+        width: 90% !important;
+    }
+    .reply {
+        margin-left: 0.5rem !important;
+        width: 97% !important;
+        font-size: 13px;
+    }
+}
+
+@media (max-width: 992px) and (min-width: 764px) {
+    .reply {
+        width: 95.3% !important;
+    }
+}
+
+@media (min-width: 992px) {
+    .reply {
+        width: 96.7% !important;
+    }
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    color: white;
+    background: #1a1d20;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    padding: 10px 0px 5px 0;
+    font-family: "Vollkorn", serif;
+    width: 100%;
+    box-shadow: 0 0 5px 2px black;
+    text-shadow: 0px 0px 7px black;
+    z-index: 9;
+}
+
+.logo-head {
+    background: -webkit-radial-gradient(circle, #343a40, #343a40, #292e33, black, black);
+    background-clip: text;
+    color: transparent;
+    text-shadow: none;
+}
+
+header span {
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.setting-btn {
+    position: absolute;
+    text-shadow: none;
+    right: 10px;
+    top: 11px;
+}
+
+header .user-icon {
+    width: 40px;
+    cursor: pointer;
+    text-shadow: none;
+    position: absolute;
+    top: 11px;
+    right: 59px;
+    border: 1px solid;
+    padding: 9px 0;
+}
+
+.home {
+    position: absolute;
+    left: 10px;
+    top: 11px;
+}
+
+.logout {
+    position: absolute;
+    right: 10px;
+    top: 11px;
+}
+
+.main {
+    margin-top: 100px;
+    background: #23282d;
+    box-shadow: 0 0 5px 2px black;
+    border-radius: 10px;
+}
+
+.message {
+    box-shadow: 0 0 5px 2px black;
+    border-radius: 10px;
+}
+
+.textarea {
+    resize: none;
+    background: lightgrey !important;
+    box-shadow: 0 0 7px black inset;
+    border: none !important;
+    border-radius: 20px;
+    outline: none;
+    font-family: cursive;
+    color: #495057;
+}
+
+.textarea:empty:before {
+    content: attr(placeholder);
+}
+
+.post {
+    box-shadow: 0 0 2px 1px #014d01;
+}
+
+.post:hover:not([disabled]) {
+    box-shadow: 0 0 2px 1px #014d01 inset;
+}
+
+.post,
+.post:focus,
+.post:active {
+    outline: none !important;
+}
+
+.message-box {
+    box-shadow: 0 0 5px black inset;
+    border-radius: 5px;
+    font-family: cursive;
+}
+
+.userid {
+    font-family: "Delius Unicase", cursive;
+    cursor: pointer;
+}
+
+.userdetails {
+    font-family: "Vollkorn", serif;
+    font-weight: lighter;
+}
+
+.post-time {
+    font-family: cursive;
+    float: right;
+    margin-top: 10px;
+    font-size: 13px;
+}
+
+form h3 {
+    box-shadow: 0 0 10px black inset;
+    font-family: "Delius Unicase", cursive;
+    border-radius: 5px;
+    padding: 10px;
+    color: #616264;
+    text-shadow: 0px 0px 7px black;
+}
+
+.form-box {
+    box-shadow: 0 0 10px black inset;
+    margin: 30px auto;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.form-box input:not([type="button"], [type="submit"]) {
+    background: lightgrey;
+    box-shadow: 0 0 7px black;
+    border: none;
+}
+
+.reply-text {
+    color: white;
+    font-family: cursive;
+    font-weight: bold;
+}
+
+.reply-text:hover {
+    text-decoration: none;
+    text-transform: none;
+    color: white;
+    cursor: pointer;
+}
+
+.reply {
+    background: #24282d;
+    border-radius: 0 0 10px 10px;
+    box-shadow: 0 0 10px black inset;
+}
+
+.logobg {
+    background: -webkit-radial-gradient(circle, #5be0ff, #004793);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.noreply {
+    box-shadow: 0 0 10px black inset;
+    padding: 10px;
+    text-align: center;
+    border-radius: 10px;
+    margin-top: 10px;
+    font-family: cursive;
+}
+
+.btn-glow {
+    box-shadow: 0 0 4px 2px gray;
+    outline: none;
+}
+
+.wrap-box {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.disp-reply,
+.disp-post {
+    background: transparent;
+    width: 100%;
+    margin-top: 7px;
+    color: white;
+    font-family: cursive;
+    resize: none;
+    border: none;
+}
